@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="col-md-5 col-md-offset-5">
+            <h3>User Information</h3>
+            <ul class="nav nav-pills">
+                <a href="/list">List Users</a>
+            </ul>
+        </div>
+        <p></p>
+        <br/>
+        <div class="col-md-5 col-md-offset-5">
+            <br/>
+            <form action="/create" method="post">
+                <div style="width: 35%" class="form-group">
+                    <input  type="text" class="form-control" name="Name" placeholder="Name" required pattern="[A-Za-z ]{1,32}" autofocus>
+                </div>
+                <br/>
+                <div style="width: 35%" class="form-group">
+                    <input  type="number" class="form-control" name="StudentID" placeholder="Student ID" required min=0>
+                </div>
+                <br/>
+                <div style="width: 35%" class="form-group">
+                    <input  type="text" class="form-control" name="Department" placeholder="Department" required>
+                </div>
+                <br/>
+                <div style="width: 35%;">
+                    <button type="reset" class="btn btn-warning">Reset</button>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <button type="submit" class="btn btn-success">Add a User</button>
+                </div> 
+            </form>
+        </div>
+    </body>
+</html>
